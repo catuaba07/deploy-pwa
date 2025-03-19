@@ -1,6 +1,6 @@
 services:
   pwa-app:
-    container_name: pwa-app
+    container_name: ${PRODUCTION_APP}
     image: httpd
     restart: unless-stopped
     ports:

@@ -3,7 +3,7 @@ services:
     image: httpd
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "81:80"
     volumes:
       - ./app:/usr/local/apache2/htdocs
     networks:

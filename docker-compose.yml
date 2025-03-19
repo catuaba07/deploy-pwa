@@ -1,5 +1,6 @@
 services:
   pwa-app:
+    container_name: pwa-app
     image: httpd
     restart: unless-stopped
     ports:

@@ -1,0 +1,14 @@
+services:
+  pwa-app:
+    image: httpd
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./app:/usr/local/apache2/htdocs
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
